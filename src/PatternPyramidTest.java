@@ -8,6 +8,9 @@ public class PatternPyramidTest {
 
 	PatternPyramid patternpyramid = new PatternPyramid();
 	
+	/**
+	 * Test case for function space
+	 */
 	@Test
 	public void testSpace() {
 		String output="    ";
@@ -16,6 +19,9 @@ public class PatternPyramidTest {
 	}
 	
 	
+	/**
+	 * Test case for function numbers
+	 */
 	@Test
 	public void testNumbers() {
 		String output="1234321";
@@ -23,8 +29,12 @@ public class PatternPyramidTest {
 		assertEquals("12321", patternpyramid.numbers(7, 5));
 	}
 	
+	
+	/**
+	 * Test case for function Pyramid
+	 */
 	@Test
-	public void testPyrimid() {
+	public void testPyramid() {
 		String[] output={"    1","   121","  12321"," 1234321","123454321"," 1234321","  12321","   121","    1"};
 		assertEquals(output, patternpyramid.Pyramid(5));
 		
